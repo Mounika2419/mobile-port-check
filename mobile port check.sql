@@ -1,0 +1,11 @@
+ use aids;
+ create table user(mobile_no bigint unique,network char(6),customer_name varchar(30),aadhar_no bigint unique,port int,sim_status char(8));
+  insert into user(mobile_no,network,customer_name,aadhar_no,port,sim_status)values(1234567890,'jio','sujitha',123456789123,2,'active'),(9876543210,'airtel','priya',9876512340,1,'active');
+  insert into user values(1287654390,'bsnl','anu',12340987654,5,'active');
+  insert into user values(15432654390,'idea','anil',1234023454,2,'inactive');
+  insert into user values(19654374390,'airtel','raju',1256783454,3,'active');
+   select * from user;
+   select customer_name from user1 where aadhar_no= 123456789123;
+    select customer_name from user1 where sim_status='active';
+     select customer_name from user1 where sim_status='inactive';
+      select customer_name from user1 where port=2;
